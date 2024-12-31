@@ -1,5 +1,5 @@
 proxies:
-- name: XCV
+- name: IKD 1
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -12,7 +12,7 @@ proxies:
     path: /trojan
     headers: 
       host: ikd1.faizalsmoet.my.id
-- name: IKD 1
+- name: ID 5
   type: trojan
   server: 104.17.3.81
   port: 443
