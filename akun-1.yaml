@@ -3,7 +3,7 @@ proxies:
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 
+  password: 4296aad7-18ed-497b-8bc1-1b07e2075dab
   udp: true
   sni: id5.faizalsmoet.my.id
   skip-cert-verify: true
