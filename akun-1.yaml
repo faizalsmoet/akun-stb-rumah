@@ -15,11 +15,11 @@ proxies:
     path: "/vmess"
     headers:
       Host: ikd2.faizalsmoet.my.id
-- name: IKD2
+- name: IKD2 TROJAN
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: cd6e58df-88a6-417f-9ea5-6a7f1baf8cef
+  password: 
   udp: true
   sni: ikd2.faizalsmoet.my.id
   skip-cert-verify: true
