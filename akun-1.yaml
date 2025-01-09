@@ -12,19 +12,6 @@ proxies:
     path: /trojan
     headers: 
       host: id5.faizalsmoet.my.id
-- name: IKD1
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 35367c9b-28c5-4805-9af0-555a06849c8c
-  udp: true
-  sni: ikd1.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: ikd1.faizalsmoet.my.id
 - name: WARNA DATA
   type: trojan
   server: 104.17.3.81
@@ -42,7 +29,7 @@ proxies:
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 
+  password: vvip-backup12
   udp: true
   sni: id3tr.faizalsmoet.my.id
   skip-cert-verify: true
@@ -51,3 +38,16 @@ proxies:
     path: /trojan
     headers: 
       host: id3tr.faizalsmoet.my.id
+- name: IKD1
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 35367c9b-28c5-4805-9af0-555a06849c8c
+  udp: true
+  sni: ikd1.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: ikd1.faizalsmoet.my.id
