@@ -1,21 +1,5 @@
 proxies:
-- name: IKD2 VMESS
-  type: vmess
-  server: 104.17.3.81
-  port: 443
-  uuid: cd6e58df-88a6-417f-9ea5-6a7f1baf8cef
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: ikd2.faizalsmoet.my.id
-  network: ws
-  ws-opts:
-    path: "/vmess"
-    headers:
-      Host: ikd2.faizalsmoet.my.id
-- name: IKD2 TROJAN
+- name: IKD2
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -67,7 +51,7 @@ proxies:
     path: /trojan
     headers: 
       host: id3tr.faizalsmoet.my.id
-- name: IKD1
+- name: 
   type: trojan
   server: 104.17.3.81
   port: 443
