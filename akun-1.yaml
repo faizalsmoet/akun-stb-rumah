@@ -3,15 +3,15 @@ proxies:
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 
+  password: b848c62d-9b3d-459b-9aff-3baa1a0c94a7
   udp: true
-  sni: ikd2.faizalsmoet.my.id
+  sni: id-7.dvst.biz.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: ikd2.faizalsmoet.my.id
+      host: id-7.dvst.biz.id
 - name: ID 5
   type: trojan
   server: 104.17.3.81
