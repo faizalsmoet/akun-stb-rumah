@@ -25,32 +25,6 @@ proxies:
     path: /trojan
     headers: 
       host: id5.faizalsmoet.my.id
-- name: WARNA DATA
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 6d9ff1cf-8a8d-4b79-ae19-a2c83f50f94e
-  udp: true
-  sni: id10.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: id10.faizalsmoet.my.id
-- name: PSINet Inc
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-backup12
-  udp: true
-  sni: id3tr.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: id3tr.faizalsmoet.my.id
 - name: 
   type: trojan
   server: 104.17.3.81
