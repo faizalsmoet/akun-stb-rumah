@@ -1,17 +1,17 @@
 proxies:
-- name: IKD2
+- name: Biznet
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: f59a58a3-4063-4ea4-b090-9325d450cd18
+  password: 2f4875bd-4868-4827-b030-af158d6637f3
   udp: true
-  sni: id-5.dvst.biz.id
+  sni: biznet1-prem.dvst.biz.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id-5.dvst.biz.id
+      host: biznet1-prem.dvst.biz.id
 - name: ID 5
   type: trojan
   server: 104.17.3.81
