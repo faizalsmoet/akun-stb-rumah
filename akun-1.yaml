@@ -2,7 +2,7 @@ proxies:
 - name: IDC
   type: trojan
   server: 104.17.3.81
-  port: 80
+  port: 443
   password: 9bd4dd6d-858f-491d-96af-e6ee54679034
   udp: true
   sni: idc.faizalsmoet.my.id
