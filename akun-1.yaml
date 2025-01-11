@@ -1,17 +1,17 @@
 proxies:
-- name: Biznet
+- name: IDC
   type: trojan
   server: 104.17.3.81
-  port: 443
-  password: 2f4875bd-4868-4827-b030-af158d6637f3
+  port: 80
+  password: 9bd4dd6d-858f-491d-96af-e6ee54679034
   udp: true
-  sni: biznet1-prem.dvst.biz.id
+  sni: idc.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: biznet1-prem.dvst.biz.id
+      host: idc.faizalsmoet.my.id
 - name: ID 5
   type: trojan
   server: 104.17.3.81
