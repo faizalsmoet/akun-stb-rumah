@@ -1,17 +1,4 @@
 proxies:
-- name: IDC WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 9bd4dd6d-858f-491d-96af-e6ee54679034
-  udp: true
-  sni: idc.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: idc.faizalsmoet.my.id
 - name: ID 5 WS
   type: trojan
   server: 104.17.3.81
@@ -36,27 +23,40 @@ proxies:
   network: grpc
   grpc-opts:
       grpc-service-name: trojan
-- name: IKD WS
+- name: MAD WS
   type: trojan
   server: 104.17.3.81
   port: 443
   password: vvip-faizal123
   udp: true
-  sni: idtr.faizalsmoet.my.id
+  sni: id3tr.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: idtr.faizalsmoet.my.id
-- name: IKD GRPC
+      host: id3tr.faizalsmoet.my.id
+- name: MAD GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
   password: vvip-faizal123
   udp: true
-  sni: idtr.faizalsmoet.my.id
+  sni: id3tr.faizalsmoet.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
       grpc-service-name: trojangrpc
+- name: IDC WS
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 9bd4dd6d-858f-491d-96af-e6ee54679034
+  udp: true
+  sni: idc.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: idc.faizalsmoet.my.id
