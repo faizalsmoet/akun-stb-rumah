@@ -1,29 +1,5 @@
 proxies:
-- name: ID 5 WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 4296aad7-18ed-497b-8bc1-1b07e2075dab
-  udp: true
-  sni: id5.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: id5.faizalsmoet.my.id
-- name: ID 5 GRPC
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 4296aad7-18ed-497b-8bc1-1b07e2075dab
-  udp: true
-  sni: id5.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojan
-- name: MAD WS
+- name: NUSANET WS
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -36,7 +12,7 @@ proxies:
     path: /trojan
     headers: 
       host: id3tr.faizalsmoet.my.id
-- name: MAD GRPC
+- name: NUSANET GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
