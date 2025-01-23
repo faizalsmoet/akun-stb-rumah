@@ -1,4 +1,28 @@
 proxies:
+- name: IKD WS
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: e2f1de8a-544a-4ef1-9c46-4bf6086ffff3
+  udp: true
+  sni: id14.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: id14.faizalsmoet.my.id
+- name: IKD GRPC
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: e2f1de8a-544a-4ef1-9c46-4bf6086ffff3
+  udp: true
+  sni: id14.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+      grpc-service-name: trojan
 - name: NUSANET WS
   type: trojan
   server: 104.17.3.81
