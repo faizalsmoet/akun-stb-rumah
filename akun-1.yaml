@@ -47,16 +47,3 @@ proxies:
   network: grpc
   grpc-opts:
       grpc-service-name: trojangrpc
-- name: IDC WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 9bd4dd6d-858f-491d-96af-e6ee54679034
-  udp: true
-  sni: idc.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: idc.faizalsmoet.my.id
