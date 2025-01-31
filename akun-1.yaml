@@ -5,7 +5,7 @@ proxies:
   port: 443
   password: e2f1de8a-544a-4ef1-9c46-4bf6086ffff3
   udp: true
-  sni: id14.natanvpn
+  sni: id14.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
