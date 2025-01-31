@@ -5,7 +5,7 @@ proxies:
   port: 443
   password: e2f1de8a-544a-4ef1-9c46-4bf6086ffff3
   udp: true
-  sni: id14.faizalsmoet.my.id
+  sni: id14.natanvpn
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -47,3 +47,16 @@ proxies:
   network: grpc
   grpc-opts:
       grpc-service-name: trojangrpc
+- name: IKD
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 9515df9f-96e9-4094-b027-2916d87e3746
+  udp: true
+  sni: id-7.dvst.biz.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: id-7.dvst.biz.id
