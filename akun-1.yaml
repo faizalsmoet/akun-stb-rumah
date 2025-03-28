@@ -29,20 +29,20 @@ proxies:
   port: 443
   password: vvip-faizal123
   udp: true
-  sni: id3tr.faizalsmoet.my.id
+  sni: cdn-id3tr.jagoanvip.xyz
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id3tr.faizalsmoet.my.id
+      host: cdn-id3tr.jagoanvip.xyz
 - name: NUSANET GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
   password: vvip-faizal123
   udp: true
-  sni: id3tr.faizalsmoet.my.id
+  sni: cdn-id3tr.jagoanvip.xyz
   skip-cert-verify: true
   network: grpc
   grpc-opts:
