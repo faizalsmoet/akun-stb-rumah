@@ -1,4 +1,28 @@
 proxies:
+- name: Warna Data WS
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: a4cf4340-a9ae-48e4-b51c-dcdb2756b0cf
+  udp: true
+  sni: id10.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: id10.faizalsmoet.my.id
+- name: Warna Data GRPC
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: a4cf4340-a9ae-48e4-b51c-dcdb2756b0cf
+  udp: true
+  sni: id10.faizalsmoet.my.id
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+      grpc-service-name: trojan
 - name: Biznet WS
   type: trojan
   server: 104.17.3.81
