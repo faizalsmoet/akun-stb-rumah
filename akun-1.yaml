@@ -1,73 +1,25 @@
 proxies:
-- name: Warna Data WS
+- name: JATIM WS
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: a4cf4340-a9ae-48e4-b51c-dcdb2756b0cf
+  password: 9f04e04e-6d76-4407-b5f6-eeab93fcac9b
   udp: true
-  sni: id10.faizalsmoet.my.id
+  sni: id3.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id10.faizalsmoet.my.id
-- name: Warna Data GRPC
+      host: id3.faizalsmoet.my.id
+- name: JATIM GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: a4cf4340-a9ae-48e4-b51c-dcdb2756b0cf
+  password: 9f04e04e-6d76-4407-b5f6-eeab93fcac9b
   udp: true
-  sni: id10.faizalsmoet.my.id
+  sni: id3.faizalsmoet.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
       grpc-service-name: trojan
-- name: Biznet WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-gentong1
-  udp: true
-  sni: cdn-mn2tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: cdn-mn2tr.jagoanvip.xyz
-- name: Biznet GRPC
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-gentong1
-  udp: true
-  sni: cdn-mn2tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojangrpc
-- name: NUSANET WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-faizal123
-  udp: true
-  sni: cdn-id3tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: cdn-id3tr.jagoanvip.xyz
-- name: NUSANET GRPC
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-faizal123
-  udp: true
-  sni: cdn-id3tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojangrpc
