@@ -23,27 +23,3 @@ proxies:
   network: grpc
   grpc-opts:
       grpc-service-name: trojan
-- name: JAKARTA WS
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-gentong1
-  udp: true
-  sni: cdn-id7tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: cdn-id7tr.jagoanvip.xyz
-- name: JAKARTA GRPC
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: vvip-gentong1
-  udp: true
-  sni: cdn-id7tr.jagoanvip.xyz
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojangrpc
