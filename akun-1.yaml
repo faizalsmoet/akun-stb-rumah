@@ -1,24 +1,24 @@
 proxies:
-- name: JATIM WS
+- name: WS
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 9f04e04e-6d76-4407-b5f6-eeab93fcac9b
+  password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
   udp: true
-  sni: id3.faizalsmoet.my.id
+  sni: id6.natanvpn.store
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id3.faizalsmoet.my.id
-- name: JATIM GRPC
+      host: id6.natanvpn.store
+- name: GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 9f04e04e-6d76-4407-b5f6-eeab93fcac9b
+  password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
   udp: true
-  sni: id3.faizalsmoet.my.id
+  sni: id6.natanvpn.store
   skip-cert-verify: true
   network: grpc
   grpc-opts:
