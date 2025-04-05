@@ -5,20 +5,20 @@ proxies:
   port: 443
   password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
   udp: true
-  sni: id6.natanvpn.store
+  sni: id6.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id6.natanvpn.store
+      host: id6.faizalsmoet.my.id
 - name: GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
   password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
   udp: true
-  sni: id6.natanvpn.store
+  sni: id6.faizalsmoet.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
