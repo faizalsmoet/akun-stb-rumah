@@ -24,6 +24,6 @@ proxies:
   servername: id5.faizalsmoet.my.id
   network: grpc
   grpc-opts:
-  grpc-mode: gun
-  grpc-service-name: vless
+    grpc-mode: gun
+    grpc-service-name: vless
   udp: true
