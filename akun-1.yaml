@@ -1,25 +1,29 @@
 proxies:
-- name: WS
-  type: trojan
-  server: 104.17.3.81
+- name: Vless WS
+  server: 104.17.2.81
   port: 443
-  password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
-  udp: true
-  sni: id6.faizalsmoet.my.id
+  type: vless
+  uuid: 0ac086a6-d221-4f4e-9471-eb5e597d1f53
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  servername: id5.faizalsmoet.my.id
   network: ws
   ws-opts:
-    path: /trojan
-    headers: 
-      host: id6.faizalsmoet.my.id
-- name: GRPC
-  type: trojan
-  server: 104.17.3.81
+    path: /vless
+    headers:
+      Host: id5.faizalsmoet.my.id
+- name: Vless gRPC
+  server: 104.17.2.81
   port: 443
-  password: 06b0de6c-e975-4e4f-9734-47b1a166c7b5
-  udp: true
-  sni: id6.faizalsmoet.my.id
+  type: vless
+  uuid: 0ac086a6-d221-4f4e-9471-eb5e597d1f53
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  servername: id5.faizalsmoet.my.id
   network: grpc
   grpc-opts:
-      grpc-service-name: trojan
+  grpc-mode: gun
+  grpc-service-name: vless
+  udp: true
