@@ -1,29 +1,25 @@
 proxies:
-- name: Vless WS
-  server: 104.17.2.81
+- name: WARNA DATA WS
+  type: trojan
+  server: 104.18.2.2
   port: 443
-  type: vless
-  uuid: 0ac086a6-d221-4f4e-9471-eb5e597d1f53
-  cipher: auto
-  tls: true
+  password: d60951fa-ace6-4e04-8993-c445ede30d1a
+  udp: true
+  sni: id3.faizalsmoet.my.id
   skip-cert-verify: true
-  servername: id5.faizalsmoet.my.id
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: id5.faizalsmoet.my.id
-- name: Vless gRPC
-  server: 104.17.2.81
+    path: /trojan
+    headers: 
+      host: id3.faizalsmoet.my.id
+- name: WARNA DATA GRPC
+  type: trojan
+  server: 104.18.2.2
   port: 443
-  type: vless
-  uuid: 0ac086a6-d221-4f4e-9471-eb5e597d1f53
-  cipher: auto
-  tls: true
+  password: d60951fa-ace6-4e04-8993-c445ede30d1a
+  udp: true
+  sni: id3.faizalsmoet.my.id
   skip-cert-verify: true
-  servername: id5.faizalsmoet.my.id
   network: grpc
   grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: vless
-  udp: true
+      grpc-service-name: trojan
