@@ -1,7 +1,7 @@
 proxies:
 - name: ID5
   type: vmess
-  server: 104.17.3.81
+  server: support.zoom.us
   port: 443
   uuid: f03f202e-590b-4820-85bf-aebd2a941f63
   alterId: 0
@@ -9,9 +9,9 @@ proxies:
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: id5.natanvpn.store
+  servername: support.zoom.us.id5.natanvpn.store
   network: ws
   ws-opts:
     path: /vmess
     headers:
-      Host: id5.natanvpn.store
+      Host: support.zoom.us.id5.natanvpn.store
