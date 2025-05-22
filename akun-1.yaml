@@ -1,24 +1,24 @@
 proxies:
 - name: WARNA DATA WS
   type: trojan
-  server: 104.17.3.81
+  server: support.zoom.us
   port: 443
   password: d60951fa-ace6-4e04-8993-c445ede30d1a
   udp: true
-  sni: id3.faizalsmoet.my.id
+  sni: support.zoom.us.id3.faizalsmoet.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id3.faizalsmoet.my.id
+      host: support.zoom.us.id3.faizalsmoet.my.id
 - name: WARNA DATA GRPC
   type: trojan
-  server: 104.17.3.81
+  server: support.zoom.us
   port: 443
   password: d60951fa-ace6-4e04-8993-c445ede30d1a
   udp: true
-  sni: id3.faizalsmoet.my.id
+  sni: support.zoom.us.id3.faizalsmoet.my.id
   skip-cert-verify: true
   network: grpc
   grpc-opts:
