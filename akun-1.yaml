@@ -1,25 +1,17 @@
 proxies:
-- name: WARNA DATA WS
-  type: trojan
-  server: support.zoom.us
+- name: ID5
+  type: vmess
+  server: 104.17.3.81
   port: 443
-  password: d60951fa-ace6-4e04-8993-c445ede30d1a
+  uuid: f2504d21-2576-498a-a753-97dde915c9c8
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: support.zoom.us.id3.faizalsmoet.my.id
   skip-cert-verify: true
+  tls: true
+  servername: id5.natanvpn.store
   network: ws
   ws-opts:
-    path: /trojan
-    headers: 
-      host: support.zoom.us.id3.faizalsmoet.my.id
-- name: WARNA DATA GRPC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: d60951fa-ace6-4e04-8993-c445ede30d1a
-  udp: true
-  sni: support.zoom.us.id3.faizalsmoet.my.id
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojan
+    path: /vmess
+    headers:
+      Host: id5.natanvpn.store
