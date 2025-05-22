@@ -1,17 +1,25 @@
 proxies:
-- name: ID5
-  type: vmess
-  server: support.zoom.us
+- name: ATHA WS
+  type: trojan
+  server: 104.17.3.81
   port: 443
-  uuid: f03f202e-590b-4820-85bf-aebd2a941f63
-  alterId: 0
-  cipher: auto
+  password: 6d0b053a-0c20-4bb9-ab5e-d78127df18cb
   udp: true
+  sni: id12.natanvpn.store
   skip-cert-verify: true
-  tls: true
-  servername: support.zoom.us.id5.natanvpn.store
   network: ws
   ws-opts:
-    path: /vmess
-    headers:
-      Host: support.zoom.us.id5.natanvpn.store
+    path: /trojan
+    headers: 
+      host: id12.natanvpn.store
+- name: ATHA GRPC
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 6d0b053a-0c20-4bb9-ab5e-d78127df18cb
+  udp: true
+  sni: id12.natanvpn.store
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+      grpc-service-name: trojan
