@@ -1,25 +1,25 @@
 proxies:
-- name: ATHA WS
+- name: NUSANET WS
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 6d0b053a-0c20-4bb9-ab5e-d78127df18cb
+  password: vvip-faizal111
   udp: true
-  sni: id12.natanvpn.store
+  sni: cdn-id2tr.jagoanvip.xyz
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id12.natanvpn.store
-- name: ATHA GRPC
+      host: cdn-id2tr.jagoanvip.xyz
+- name: NUSANET GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 6d0b053a-0c20-4bb9-ab5e-d78127df18cb
+  password: vvip-faizal111
   udp: true
-  sni: id12.natanvpn.store
+  sni: cdn-id2tr.jagoanvip.xyz
   skip-cert-verify: true
   network: grpc
   grpc-opts:
-      grpc-service-name: trojan
+      grpc-service-name: trojangrpc
