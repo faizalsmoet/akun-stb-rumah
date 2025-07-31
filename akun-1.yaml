@@ -1,48 +1,24 @@
 proxies:
-- name: IKD WS
+- name: BIZNET WS
   type: trojan
-  server: 104.17.3.81
+  server: support.zoom.us
   port: 443
-  password: 1f4b32e2-59bb-49d8-931c-d1f4a3599d00
+  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
   udp: true
-  sni: id2.natanvpn.store
+  sni: support.zoom.us.id1.natanvpn.store
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id2.natanvpn.store
-- name: IKD GRPC
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 1f4b32e2-59bb-49d8-931c-d1f4a3599d00
-  udp: true
-  sni: id2.natanvpn.store
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-      grpc-service-name: trojan
-- name: IKD WILD WS
+      host: support.zoom.us.id1.natanvpn.store
+- name: BIZNET GRPC
   type: trojan
   server: support.zoom.us
   port: 443
-  password: 1f4b32e2-59bb-49d8-931c-d1f4a3599d00
+  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
   udp: true
-  sni: support.zoom.us.id2.natanvpn.store
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers: 
-      host: support.zoom.us.id2.natanvpn.store
-- name: IKD WILD GRPC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: 1f4b32e2-59bb-49d8-931c-d1f4a3599d00
-  udp: true
-  sni: support.zoom.us.id2.natanvpn.store
+  sni: support.zoom.us.id1.natanvpn.store
   skip-cert-verify: true
   network: grpc
   grpc-opts:
