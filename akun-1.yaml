@@ -1,11 +1,11 @@
 proxies:
 - name: WS
   type: trojan
-  server: 104.17.3.81
+  server: support.zoom.us
   port: 443
   password: 5e8c2949-ae56-44e3-9a4f-84de00a7a9de
   udp: true
-  sni: id16.natanvpn.store
+  sni: zoomgov.id16.natanvpn.store
   skip-cert-verify: true
   network: ws
   ws-opts:
