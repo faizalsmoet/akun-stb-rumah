@@ -11,7 +11,7 @@ proxies:
   ws-opts:
     path: /trojan
     headers: 
-      host: id16.natanvpn.store
+      host: support.zoom.us.id16.natanvpn.store
 - name: GRPC
   type: trojan
   server: 104.17.3.81
