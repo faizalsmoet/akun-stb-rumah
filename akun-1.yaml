@@ -3,22 +3,22 @@ proxies:
   type: trojan
   server: support.zoom.us
   port: 443
-  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
+  password: 5e8c2949-ae56-44e3-9a4f-84de00a7a9de
   udp: true
-  sni: support.zoom.us.id1.natanvpn.store
+  sni: support.zoom.us.id16.natanvpn.store
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: support.zoom.us.id1.natanvpn.store
+      host: support.zoom.us.id16.natanvpn.store
 - name: BIZNET GRPC
   type: trojan
   server: support.zoom.us
   port: 443
-  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
+  password: 5e8c2949-ae56-44e3-9a4f-84de00a7a9de
   udp: true
-  sni: support.zoom.us.id1.natanvpn.store
+  sni: support.zoom.us.id16.natanvpn.store
   skip-cert-verify: true
   network: grpc
   grpc-opts:
