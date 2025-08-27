@@ -1,24 +1,24 @@
 proxies:
-- name: WS
+- name: BIZNET WS
   type: trojan
   server: 104.17.3.81
   port: 443
   password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
   udp: true
-  sni: id1.natanvpn.store
+  sni: id1.keong.store
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
     headers: 
-      host: id1.natanvpn.store
-- name: GRPC
+      host: id1.keong.store
+- name: BIZNET GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
   password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
   udp: true
-  sni: id1.natanvpn.store
+  sni: id1.keong.store
   skip-cert-verify: true
   network: grpc
   grpc-opts:
