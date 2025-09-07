@@ -1,9 +1,9 @@
 proxies:
-- name: BIZNET WS
+- name: WS
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
   udp: true
   sni: id1.keong.store
   skip-cert-verify: true
@@ -12,11 +12,11 @@ proxies:
     path: /trojan
     headers: 
       host: id1.keong.store
-- name: BIZNET GRPC
+- name: GRPC
   type: trojan
   server: 104.17.3.81
   port: 443
-  password: 7fdb6dee-0998-4b99-b14e-af6b1ff2207b
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
   udp: true
   sni: id1.keong.store
   skip-cert-verify: true
