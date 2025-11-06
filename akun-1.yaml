@@ -23,4 +23,29 @@ proxies:
   network: grpc
   grpc-opts:
       grpc-service-name: trojan
+- name: WS 1
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
+  udp: true
+  sni: support.zoom.us.id1.keong.store
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: support.zoom.us.id1.keong.store
+- name: GRPC1
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
+  udp: true
+  sni: support.zoom.us.id1.keong.store
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+      grpc-service-name: trojan
+
       
