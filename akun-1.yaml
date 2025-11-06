@@ -15,7 +15,7 @@ proxies:
       headers:
         Host: id5.keong.store
     udp: true
-    - name: faizalsmoet2
+- name: faizalsmoet2
     server: support.zoom.us
     port: 443
     type: vmess
