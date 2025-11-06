@@ -1,33 +1,25 @@
 proxies:
-  - name: faizalsmoet1
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: f8115076-2795-4642-95ef-2976cc010755
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id5.keong.store
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: id5.keong.store
-    udp: true
-  - name: faizalsmoet2
-    server: support.zoom.us
-    port: 443
-    type: vmess
-    uuid: f8115076-2795-4642-95ef-2976cc010755
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: support.zoom.us.id5.keong.store
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: support.zoom.us.id5.keong.store
-    udp: true
+- name: WS
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
+  udp: true
+  sni: id1.keong.store
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers: 
+      host: id1.keong.store
+- name: GRPC
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: 1e0cb055-e9d7-4734-9fe9-6431fc9e8bc8
+  udp: true
+  sni: id1.keong.store
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+      grpc-service-name: trojan
